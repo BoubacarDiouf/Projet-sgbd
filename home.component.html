@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord Enseignant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+</head>
+<body>
+    <a href="#" class="logout">Déconnexion</a>
+    <div class="container">
+        <h1>Tableau de Bord du Responsable de Classe</h1>
+        <div class="features">
+            <div class="feature" onclick="openPage('avis_etudiants.html')">
+                <i class="fas fa-users"></i>
+                <p>Recueillir l'avis des étudiants</p>
+            </div>
+            <div class="feature" onclick="openPage('effectivite_enseignements.html')">
+                <i class="fas fa-chart-line"></i>
+                <p>Constater l'effectivité quotidienne des enseignements</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPage(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
